@@ -1,0 +1,27 @@
+{
+  "name": "azure-logstreamer",
+  "description": "TBD",
+  "tags": [
+    "a",
+    "b",
+    "c"
+  ],
+  "version": "0.1.0",
+  "author": "Yavor Georgiev <yavorg@microsoft.com>",
+  "repository": {
+    "type": "git",
+    "url": "TBD"
+  },
+  "bugs": {
+    "url": "TBD"
+  },
+  "engines": [
+    "node >= 0.6"
+  ],
+  "dependencies": {
+    "request": "~2.11.4"
+  },
+  "plugins" : {
+  	"azure-cli": "./index.js"
+  }
+}
