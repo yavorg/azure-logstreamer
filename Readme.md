@@ -1,0 +1,39 @@
+azure-logstreamer
+=============
+
+This projects enables better logging for Windows Azure Websites written in Node.js. The
+project consists of:
+* A connect middleware piece for Node.js apps, which lets you stream the 
+console output of your app over a /streamedlog endpoint via a HTTP chunked response. Optionally
+this middleware will also store your logs in Azure table storage for safe keeping.
+* A plugin for the azure command-line tool that enables it to access the /streamedlog endpoint 
+and see the server log entries in your console window in real time. 
+
+Setup
+-------
+
+To set up the connect middleware, just add this line. Azure table storage credentials can be 
+passed to the method to enable storing the logs permanently.
+
+```javascript
+connect().use(connect.azure-logstreamer());
+```
+
+To receive the log output in your console window, first install the azure command-line tool
+using npm, and then install the plugin from this repo. 
+
+```bash
+npm install azure -g
+npm install https://github.com/yavorg/azure-logstreamer/tarball/master -g
+```
+
+This will add an extra option to the azure tool.
+
+```bash
+azure site log tail [name]
+```
+
+Contributing
+------------
+
+Here is a video demo showing the final experience.
