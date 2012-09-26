@@ -12,11 +12,17 @@ and see the server log entries in your console window in real time.
 Setup
 -------
 
-To set up the connect middleware, just add this line. Azure table storage credentials can be 
+To set up the connect middleware, first install it via npm.
+
+```bash
+npm install https://github.com/yavorg/azure-logstreamer/tarball/master
+```
+
+Then, add this one line to your connect app. Azure table storage credentials can be 
 passed to the method to enable storing the logs permanently.
 
 ```javascript
-connect().use(connect.azure-logstreamer());
+connect().use(require('azure-logstreamer')());
 ```
 
 To receive the log output in your console window, first install the azure command-line tool
@@ -33,7 +39,7 @@ This will add an extra option to the azure tool.
 azure site log tail [name]
 ```
 
-Contributing
+Demo
 ------------
 
 Here is a video demo showing the final experience.
