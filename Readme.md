@@ -43,3 +43,5 @@ Demo
 ------------
 
 Here is a video demo showing the final experience.
+
+<iframe src="http://player.vimeo.com/video/50185987" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/50185987">azure-logstreamer demo</a> from <a href="http://vimeo.com/yavorgeorgiev">Yavor Georgiev</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
